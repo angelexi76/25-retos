@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+      background-color: #111;
+      align-items:center;
+      justify-content:center;
+      height: 100vh;
+      display: flex;
+      overflow:hidden;
+      margin:0;
+    }
+  
+   .container {
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 400px;
+  
+  }
+  /*el cuadro,box shadow crea el marco*/
+    .square {
+      background-color:#1b1b1b;
+      box-shadow: 0 0 2px #000;
+      width: 16px;
+      height:16px;
+      margin:2px;
+      transition: 2s ease;
+
+    }
+  
+  .square:hover {
+    transition-duration: 0s;
+    }

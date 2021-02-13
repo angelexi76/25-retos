@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #efedd6;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+h1 {
+  margin: 10px;
+}
+/* aca se mueven las cajas con traslate y transform*/
+.box {
+  background-color: steelblue;
+  color: rgb(133, 231, 198);
+  width: 400px;
+  height: 200px;
+  margin: 10px;
+  border-radius:10px ;
+  transform: translateX(400%);
+  transition: transform 0.7s ease;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.box:nth-of-type(even) {
+    transform: translateX(-400%);
+}
+/*como se mueve la cajita,plano horizontal esta en negativo patra que salgan de los dos lados*/
+.box.show {
+    transform: translateX(0);
+}
+
+.box h2 {
+  font-size: 45px;
+}
